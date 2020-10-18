@@ -10,7 +10,15 @@
     <link rel="shortcut icon" href="img/icon64.png" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilo.css">
-
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(function() {
+                console.log('Service worker registrado com sucesso!')
+            }).catch(function() {
+                console.log('Regristro do service não realizado!')
+            })
+        }
+    </script>
 </head>
 
 <body>
