@@ -1,45 +1,43 @@
-{
-    "name": "Site de Warcraft 3 do Gabriel Valentim",
-    "short_name": "Warcraft3",
-    "start_url": "https://gabriel887.github.io/PWABuilder/",
-    "icons": [
-        {
-            "src": "/images/PWABuilder/img/icone72.png",
-            "sizes": "72x72",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/PWABuilder/img/icone48.png",
-            "sizes": "48x48",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/PWABuilder/img/icone96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/PWABuilder/img/icone128.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/PWABuilder/img/icone256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/PWABuilder/img/icone512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "theme-color": "#d35400",
-    "background-color": "#fff",
-    "display": "fullscreen",
-    "orientation": "any",
-    "background_color": "",
-    "url": "https://gabriel887.github.io/PWABuilder/",
-    "lang": "Portuguese",
-    "screenshots": []
+"name": "Site de Warcraft 3 do Gabriel Valentim",
+"short_name": "Warcraft3",
+"start_url": "https://gabriel887.github.io/PWABuilder/",
+"icons": [{
+        "src": "/images/PWABuilder/img/icone72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/PWABuilder/img/icone48.png",
+        "sizes": "48x48",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/PWABuilder/img/icone96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/PWABuilder/img/icone128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/PWABuilder/img/icone256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    },
+    {
+        "src": "/images/PWABuilder/img/icone512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }
+],
+"theme-color": "#d35400",
+"background-color": "#fff",
+"display": "fullscreen",
+"orientation": "any",
+"background_color": "",
+"url": "https://gabriel887.github.io/PWABuilder/",
+"lang": "Portuguese",
+"screenshots": []
 }
