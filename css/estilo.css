@@ -1,0 +1,18 @@
+body {
+    background: url('../img/fundo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-header {
+    background: url('../img/doHeader2.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mg-n5 {
+    margin-top: -3rem;
+}

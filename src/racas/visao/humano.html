@@ -1,0 +1,133 @@
+<div class="row mt-5 justify-content-center">
+    <div class="col-10 ">
+        <div class="card bg-dark text-white mt-3 mb-3 text-wrap">
+            <img src="img/fundoHumano.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay text-center">
+                <h2 class="card-header">Informações gerais de jogabilidade</h2>
+                <div class="row  col-md-9 col-sm-12 mt-md-3 ml-md-3" style="background-color: rgba(3, 5, 34, 0.288);">
+                    <p class="card-text">Em Warcraft 3, as unidades humanas em sua maior parte são frágeis e sem muita força bruta, mas tiram proveito da tecnologia e magia desenvolvida rapidamente. Os Humanos usam composições boas e grandes números para colocar seus oponentes
+                        de joelhos.</p>
+                    <p>Excelentes possibilidades de expansão. Com a capacidade dos peões em construir cooperativamente em Warcraft 3, você pode levantar uma Town Hall muito rapidamente em comparação com outras raças. Os humanos podem fazer com que seus peasants
+                        construam estruturas em grupos em troca de um preço mais alto na hora de construir. Com upgrades de alvenaria no Lumber Mill você também pode aumentar a armadura de suas torres para se tornarem mais resistentes e difíceis de serem
+                        destruídas pelo seu oponente. </p>
+                    <p> Creepando com Milícia. Outra função muito útil dos peões é que eles podem usar a habilidade Call to Arms para se tornarem milícias. Embora sejam bastante vulneráveis, as milícias causam tanto dano quanto um footman — então usar alguns
+                        irá permitir que você consiga limpar campos de creeps maiores no early game, tendo uma vantagem de nível no seu herói e até mesmo de item.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-10 bg-primary mt-5 ">
+
+        <h2>Herois</h2>
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/paladino.jpg" class="card-img" style="max-height: 350px;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Paladino</h5>
+                        <p class="card-text text-justify">Embora os Paladinos já tenham sido amados e reverenciados pelas terras de Lordaeron , eles caíram em tempos difíceis. Toda a Ordem da Mão de Prata foi dissolvida por se recusar a matar inocentes habitantes da cidade que se acredita
+                            estarem contaminados pela temida praga dos Mortos-Vivos . Desprivilegiados e expulsos de seus antigos lares, os Paladinos ainda trabalham desinteressadamente para proteger a humanidade das mandíbulas do mal. Fortalecidos pela
+                            Luz , esses poderosos guerreiros brandem o martelo de guerra e o fogo sagrado em batalha contra todos os que espezinham os mansos e os inocentes.</p>
+                        <div class="row justify-content-center">
+                            <button type="button" class="btn btn-info btn-modalHerois" id="paladino"> Habilidades</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/arquimago.jpg" class="card-img" style="max-height: 350px;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Arquimago</h5>
+                        <p class="card-text text-justify">Vindo do reino mágico de Dalaran, os archmagi representam o pináculo do poder mágico. Tecendo seus intrincados encantamentos, esses velhos bruxos malucos são chamados a defender a humanidade com todos os poderes mágicos à sua disposição.
+                            Montados sobre seus cavalos de confiança, os archmagi brandem cajados antigos que servem para canalizar suas energias ferozes em batalha. Embora ríspidos e um pouco distantes, esses magos experientes são uma visão animadora
+                            em qualquer campo de batalha em que o destino da humanidade esteja em perigo.</p>
+                        <div class="row justify-content-center">
+                            <button type="button" class="btn btn-info btn-modalHerois" id="arquimago"> Habilidades</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="modal-herois" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <img src="img/retratoPaladino.jpg" class="img-rounded img-responsive">
+                    <h3>Paladino</h3>
+                </div>
+            </div>
+            <div class="modal-body">
+                <a type="button" class="btn btn-default btn-sm btn-Q" id="paladino">
+                    <div class="col-1"><img src="img/Qpaladino.png" class="img-rounded img-responsive"></div>
+                </a>
+                <a type="button" class="btn btn-default btn-sm btn-W" id="paladino">
+                    <div class="col-1"><img src="img/Wpaladino.gif" class="img-rounded img-responsive"></div>
+                </a>
+                <a type="button" class="btn btn-default btn-sm btn-E" id="paladino">
+                    <div class="col-1"><img src="img/Epaladino.gif" class="img-rounded img-responsive"></div>
+                </a>
+                <a type="button" class="btn btn-default btn-sm btn-R" id="paladino">
+                    <div class="col-1"><img src="img/Rpaladino.gif" class="img-rounded img-responsive"></div>
+                </a>
+                <div class=" p-3" id="textoHabilidade">
+                    <h5 id="tituloHabilidade">Luz sagrada ou Holy Ligh<strong>t</strong></h5>
+                    <p>Uma luz sagrada que pode curar uma unidade viva amiga ou danificar uma unidade morta-viva inimiga.
+                    </p>
+                    <p>Não pode ser lançada sobre si mesmo.</p>
+                    <table class="table table-responsive-sm" id="table-habilidades">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" class="text-center">Nível da Habilidade</th>
+                                <th scope="col" class="text-center">Custo</th>
+                                <th scope="col" class="text-center">Recarga</th>
+                                <th scope="col" class="text-center">Efeito</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col" class="text-center">1</th>
+                                <th scope="col" class="text-center">65</th>
+                                <th scope="col" class="text-center">5 segundos</th>
+                                <th scope="col" class="text-center" style="font-size: small;">Cura 200 de vida OU dá 100 de dano em uma unidade morto-vivo inimiga.</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="text-center">2</th>
+                                <th scope="col" class="text-center">65</th>
+                                <th scope="col" class="text-center">5 segundos</th>
+                                <th scope="col" class="text-center" style="font-size: small;">Cura 400 de vida OU dá 200 de dano em uma unidade morto-vivo inimiga.</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="text-center">3</th>
+                                <th scope="col" class="text-center">65</th>
+                                <th scope="col" class="text-center">5 segundos</th>
+                                <th scope="col" class="text-center" style="font-size: small;">Cura 600 de vida de uma unidade aliada OU da 300 de dano em uma unidade morto-vivo inimiga.</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="mdi mdi-close-circle"></i> Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="src/racas/controle/herois.js"></script>
