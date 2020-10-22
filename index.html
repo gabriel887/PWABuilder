@@ -12,10 +12,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Warcraft III</title>
-        <link rel='manifest' href='/manifest.json'>
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="warcraft3">
+        <meta name="apple-mobile-web-app-title" content="warcraft3">
+        <meta name="theme-color" content="#000000">
+        <meta name="msapplication-navbutton-color" content="#000000">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-starturl" content="https://gabriel887.github.io/PWABuilder/">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="icon" type="image/png" sizes="512x512" href="img/icone512.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="img/icone512.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="img/icon64.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="64x64" href="img/icon64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icon32.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="img/icon32.png">
+        <link rel="icon" type="image/png" sizes="72x72" href="img/icon72.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="img/icon72.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/icone96.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="img/icone96.png">
+        <link rel="icon" type="image/png" sizes="128x128" href="img/icone128.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="img/icone128.png">
+        <link rel="icon" type="image/png" sizes="256x256" href="img/icone256.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="img/icone256.png">
         <link rel="shortcut icon" href="img/icon64.png" type="image/x-icon">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/estilo.css">
+        <script>
+            if ("serviceWorker" in navigator) {
+                if (navigator.serviceWorker.controller) {
+                    console.log("[Aplicativo] funcionário de serviço ativo encontrado, não há necessidade de registrar");
+                } else {
+                    navigator.serviceWorker
+                        .register("./sw.js", {
+                            scope: "./"
+                        })
+                        .then(function(reg) {
+                            console.log("[Aplicativo] O trabalhador do serviço foi registrado para o escopo: " + reg.scope);
+                        });
+                }
+            }
+        </script>
 
 </head>
 
